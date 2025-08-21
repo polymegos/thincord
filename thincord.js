@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Thincord
 // @description     Hides the gaming/music status of Discord users unless you have DMs open with them. Always hides avatar decorations.
-// @version         1.1.1
+// @version         1.1.2
 // @author          polymegos
 // @namespace       https://github.com/polymegos/thincord
 // @supportURL      https://github.com/polymegos/thincord/issues
@@ -27,6 +27,9 @@
 
         svg[class^='avatarDecoration'],
         img[class^='avatarDecoration'] {
+            display: none !important;
+        }
+        div[class*='text__19b6d'] {
             display: none !important;
         }
     `;
